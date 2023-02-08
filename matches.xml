@@ -1,0 +1,44 @@
+<MATCHES>
+   <mainMatche>
+        <imgClub1>c1.png</imgClub1>
+           <scoreClub1>3</scoreClub1>
+           <scoreClub2>0</scoreClub2>
+          <date>15 mars 2023</date>
+       <imgClub2>c2.png</imgClub2>
+   </mainMatche>
+
+   <listMatches>
+        <matche>
+            <imgClub1>c11.png</imgClub1>
+               <scoreClub1>1</scoreClub1>
+               <scoreClub2>3</scoreClub2>
+             <imgClub2>c12.png</imgClub2>
+              <date>15 mars 2023</date>
+        </matche>
+
+          <matche>
+            <imgClub1>c13.png</imgClub1>
+               <scoreClub1>1</scoreClub1>
+               <scoreClub2>0</scoreClub2>
+            <imgClub2>c6.png</imgClub2>
+             <date>15 mars 2023</date>
+         </matche>
+
+          <matche>
+            <imgClub1>c15.png</imgClub1>
+               <scoreClub1>1</scoreClub1>
+               <scoreClub2>2</scoreClub2>
+              <imgClub2>c16.png</imgClub2>
+              <date>15 mars 2023</date>
+        </matche>
+
+          <matche>
+            <imgClub1>c19.png</imgClub1>
+               <scoreClub1>0</scoreClub1>
+               <scoreClub2>1</scoreClub2>
+           <imgClub2>c8.png</imgClub2>
+           <date>15 mars 2023</date>
+        </matche>
+
+   </listMatches>
+</MATCHES>

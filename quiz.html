@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <nav> <!--nav bar -->
+    <span class="image-clickable">
+        <a href="index.html">
+          <img src="img/LOGO4.png" alt="main-logo" class="logo" />
+        </a>
+    </span>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a  href="index.html"><img src="img/home.png" alt=""></a>
+            <span>Accueil</span> <!--afficher au hover -->
+        </li>
+        <li><a href="rules.html"><img style="width: 27px;" src="img/equipment.png" alt=""></a>
+          <span> Règles</span> 
+       </li>
+       <li><a href="history.html"><img style="width: 27px;" src="img/article.png" alt=""></a>
+        <span> Histoire</span> 
+     </li>
+        <li class="active"><a href="quiz.html"><img style="width: 27px;" src="img/quiz.png" alt=""></a>
+            <span> Quize</span> 
+        </li>
+       
+      </ul>
+      <figure class="click-menu"  onclick="myF()">
+          <img class="click" src="img/menu.png" alt="">
+      </figure>
+      <a class="btn-contact" href="#"><button>Contact Us</button></a>
+    </nav>
+ <main class="quiz">
+
+      <section id="cover" class=""><!--top section : afficher image À côté de div avec display:flex; -->
+        <div class="cover-text">
+          <h2>Est-ce que votre connaissance du rugby est bonne ?</h2>
+          <h4  id="user-score">Testez vos connaissances sur le rugby avec notre petit quiz.</h4>
+        </div>
+        <img src='img/histoire1.jpg' class="cover-image">
+      </section>
+
+        <section id="display-container">
+            <had class="header">
+                <span class="number-of-count nbr-question">1 question sur 3</span>
+              <div class="timer-div"> <!--utiliser la balise div pour regrouper les element image et span-->
+                <img src="img/trophy.png" width="30px" />
+                <span class="time-left"></span>
+              </div>
+            </had>
+            <div id="container"><!--utiliser la balise div pour regrouper la question et  option.-->
+             <!-- les questions et les options seront affichées ici -->
+            </div>
+            <button id="suiv-button">Suivante</button>
+        </section>
+
+        <section class="score-container hide"><!--utiliser class hide  pour manger "display:non" le botton et 
+                                                  reafficger si on terminer quiz -->
+            <button  id="restart">Recommencer</button>
+        </section>
+ </main>
+
+<footer>
+    <section class="social">
+        <p>Follow us on social media</p>
+        <ul class="wrapper">
+          <a href="#" target="_blank">
+            <li class="icon linkedin">
+              <span class="tooltip">LinkedIn</span>
+              <img src="img/icons8-linkedin-circled-250.png" alt="">
+            </li>
+          </a>
+          <a href="#" target="_blank">
+            <li class="icon facebook">
+              <span class="tooltip">Facebook</span>
+               <img src="img/icons8-facebook-250.png" alt="">
+            </li>
+          </a>
+          <a href="#" target="_blank">
+            <li class="icon github">
+              <span class="tooltip">GitHub</span>
+              <img src="img/icons8-github-250.png" alt="">
+            </li>
+          </a>
+        </ul>
+    </section>
+      <p>Copyright &copy; M1 IL 2022-2023</p>
+</footer>
+</body>
+ <script src="script.js"></script>
+</html>

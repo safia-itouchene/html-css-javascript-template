@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil</title>
+    <link rel="icon" href="img/american-football-player (1).png">
+</head>
+<body>
+  <nav> <!--nav bar -->
+    <span class="image-clickable">
+        <a href="index.html">
+          <img src="img/LOGO4.png" alt="main-logo" class="logo" />
+        </a>
+    </span>
+      
+      <ul class="nav-links" id="nav-links">
+        <li  class="active"><a  href="index.html"><img src="img/home.png" alt=""></a>
+            <span>Accueil</span> <!--afficher au hover -->
+        </li>
+        <li><a href="rules.html"><img style="width: 27px;" src="img/equipment.png" alt=""></a>
+          <span> Règles</span> 
+       </li>
+       <li><a href="history.html"><img style="width: 27px;" src="img/article.png" alt=""></a>
+        <span> Histoire</span> 
+     </li>
+        <li><a href="quiz.html"><img style="width: 27px;" src="img/quiz.png" alt=""></a>
+            <span> Quize</span> 
+        </li>
+       
+      </ul>
+      <figure class="click-menu"  onclick="myF()">
+          <img class="click" src="img/menu.png" alt="">
+      </figure>
+      <a class="btn-contact" href="#"><button>Contact Us</button></a>
+    </nav>
+
+    <header>
+         <section class="banner-cover">
+            <div class="overlay"><!-- class pour ajouter un effet à l'image  header -->
+                <div class="contant">
+                  <h1>RUGBY ZONE</h1>
+                  <p> Le rugby est un jeu de hooligans pratiqué par des gentlemen</p>
+                 <button> <a href="history.html">Découvrez maintenant</a> </button>
+                </div>
+            </div>
+         </section>
+   </header>
+
+<main>  
+ <section class="score-card" ><!--section pour afficher un match avec des résultat on real time -->
+      <div class="score-contant" >
+           <div class="top">
+               <ul>
+                  <li class="live">&#x2022 Live</li>
+                  <li>RUGBY WORLD CUP 2022</li>
+                  <li>RUGBY ZONE</li>
+               </ul>
+           </div>
+            <div id="score"><!-- afficher ici resultat du matche avec utilisation du ajax (à partir de ficher xml)--></div>
+            <span class="bottom">
+              <p>12 Aug at  <b> 19:00 </b></p>
+            </span> 
+      </div>
+ </section>
+
+  <section class="main-matche"> <!---section pour afficher  Calendrier & Matches -->
+        <div id="left-part">  <!-- disply section 1 À côté de section 2 display: grid; 
+                                                                        grid-template-columns: 1fr 1fr;-->
+                  <h1>Calendrier & Matches</h1>
+              <section>
+                      <div class="child">
+                      <div class="overlay"><!-- class pour ajouter un effet à l'image  header -->
+                      <div class="overlay-cont" >
+                          <h5> Stade olympique central</h5>
+                          <span class="date"> 15 mars 2023 </span>
+                          <div class="cont">
+                             <figure>
+                                  <img src="img/c3.png" alt="">
+                             </figure>
+                             <span>VS</span>
+                            <figure>
+                                 <img src="img/c4.png" alt="">
+                             </figure>
+                          </div>
+                      </div>
+                      </div>
+                      </div>
+
+                      <div class="child">
+                      <div class="overlay"><!-- class pour ajouter un effet à l'image  header -->
+                      <div class="overlay-cont" >
+                            <h5> Stade olympique central</h5>
+                            <span class="date"> 20 mars 2023 </span>
+                            <div class="cont">
+                                <figure>
+                                   <img src="img/c5.png" alt="">
+                                </figure>
+                               <span>VS</span>
+                               <figure>
+                                   <img src="img/c14.png" alt="">
+                               </figure>
+                            </div>
+                      </div>
+                      </div>
+                      </div>
+
+                      <div class="child">
+                        <div class="overlay"><!-- class pour ajouter un effet à l'image  header -->
+                          <div class="overlay-cont" >
+                            <h5> Stade olympique central </h5>
+                            <span class="date"> 25 mars 2023 </span>
+                            <div class="cont"><!--utiliser la balise div pour regrouper les element <figure> et <span>-->
+                                <figure>
+                                   <img src="img/c18.png" alt="">
+                                </figure>
+                               <span>VS</span>
+                               <figure>
+                                   <img src="img/c17.png" alt="">
+                               </figure>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="child">
+                      <div class="overlay"><!-- class pour ajouter un effet à l'image  header -->
+                      <div class="overlay-cont" ><!--utiliser la balise div pour regrouper les element <h5> <span> et <div>-->
+                          <h5> Stade olympique central</h5>
+                          <span class="date"> 30 mars 2023</span>
+                            <div class="cont">
+                                <figure>
+                                   <img src="img/c9.png" alt="">
+                                </figure>
+                               <span>VS</span>
+                               <figure>
+                                   <img src="img/c10.png" alt="">
+                               </figure>
+                          </div>
+                        </div>
+                        </div>
+                       </div>
+                  </section>
+            </div>
+            <div id="right-part"> <!--afficher les matches avec des résultat on real time-->
+                  <h1>Derniers résultats</h1>
+                  <ul id="list-matches"> <!-- afficher ici resultat du match avec utilisation du ajax (à partir de ficher xml)--></ul>
+            </div>
+      </section>
+      <section class="card-rugby">
+           <h1>C'est quoi le rugby</h1>
+           <div class="continar-r"> 
+           <div class="card-r">
+              <figure>
+                <img src="img/trophy.png" alt="">
+              </figure>
+              <p>Le succès est la hauteur à laquelle vous rebondissez lorsque vous touchez le fond.</p>
+           </div>
+           <div class="card-r">
+            <figure>
+              <img src="img/rugby-player.png" alt="">
+            </figure>
+            <p>Le rugby est un jeu de hooligans pratiqué par des gentlemen.</p>
+           </div>
+           <div class="card-r">
+            <figure>
+              <img src="img/goal.png" alt="">
+            </figure>
+             <p>La danse de salon est un sport de contact. Le rugby est un sport de collision.</p>
+           </div>
+          </div>
+      </section>
+       <!--section pour afficher card blog qui contiant les Derniéres nouvelles-->
+      <section class="blogs">
+        <h1>Derniéres nouvelles</h1>
+        <div class="container">
+              <a href="#" class="card">
+                <figure>
+                  <img class="card__img" src="img/5.jpg" alt="unsplash random image" />
+                </figure>
+                <div class="card__body">
+                  <h3 class="card__title">Stephen Donald: Rugby Australia manque de vue d'ensemble.</h3>
+                 
+                </div>
+              </a>
+              <a href="#" class="card">
+                <figure>
+                  <img class="card__img" src="img/cup1.jpg" alt="unsplash random image" />
+                </figure>
+                <div class="card__body">
+                  <h3 class="card__title">De plus en plus de joueurs examinent attentivement les nouvelles.</h3>
+                </div>
+              </a>
+              <a href="#" class="card">
+                <figure>
+                  <img class="card__img" src="img/3.jpg" alt="unsplash random image" />
+                </figure>
+                <div class="card__body">
+                  <h3 class="card__title">"La personnalité d'une chaise": l'ex-Wallaby fustige Dave Rennie.</h3>
+                
+                </div>
+              </a>
+              <a href="#" class="card">
+                <figure>
+                  <img class="card__img" src="img/4.jpg" alt="unsplash random image" />
+                </figure>
+                <div class="card__body">
+                  <h3 class="card__title">Le tacle à la taille est la mort du rugby.</h3>
+                </div>
+              </a>
+
+              <a href="#" class="card">
+                <figure>
+                  <img class="card__img" src="img/history2.jpg" alt="unsplash random image" />
+                </figure>
+                <div class="card__body">
+                  <h3 class="card__title">Le rugby devrait abandonner la culture woo-woo.</h3>
+                 
+                </div>
+              </a>
+              <a href="#" class="card">
+                <figure>
+                   <img class="card__img" src="img/n3.jpg" alt="unsplash random image" />
+                </figure>
+                <div class="card__body">
+                  <h3 class="card__title">Le Racing dans la mouise, le LOU en surprise… Quels cadors du Top 14 seront out ?</h3>
+                </div>
+              </a>
+              <a href="#" class="card">
+                <figure>
+                  <img class="card__img" src="img/n1.jpg" alt="unsplash random image" />
+                </figure>
+                <div class="card__body">
+                  <h3 class="card__title">RUGBY. Quel est le match le plus légendaire du 15 de France dans le 6 Nations ? </h3>
+                
+                </div>
+              </a>
+              <a href="#" class="card">
+                <figure>
+                  <img class="card__img" src="img/n2.jpg" alt="unsplash random image" />
+                </figure>
+                <div class="card__body">
+                  <h3 class="card__title">En Afrique du Sud, l'ASM a retrouvé un de ses anciens héros de 2010 ! </h3>
+                
+                </div>
+              </a>
+              
+        </div>
+      </section>
+    </main>
+
+  <footer><!--simple footer -->
+      <section class="social">
+        <p>Follow us on social media</p>
+        <ul class="wrapper">
+          <a href="#" target="_blank">
+            <li class="icon linkedin">
+              <span class="tooltip">LinkedIn</span> <!--afficher au hover -->
+              <img src="img/icons8-linkedin-circled-250.png" alt="">
+            </li>
+          </a>
+          <a href="#" target="_blank">
+            <li class="icon facebook">
+              <span class="tooltip">Facebook</span>
+               <img src="img/icons8-facebook-250.png" alt="">
+            </li>
+          </a>
+          <a href="#" target="_blank">
+            <li class="icon github">
+              <span class="tooltip">GitHub</span>
+              <img src="img/icons8-github-250.png" alt="">
+            </li>
+          </a>
+        </ul>
+      </section>
+      <p>Copyright &copy; M1 IL 2022-2023</p>
+  </footer>
+</body>
+<script src="script.js"></script>
+</html>
