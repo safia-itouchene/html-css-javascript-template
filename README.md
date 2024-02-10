@@ -11,6 +11,9 @@ The homepage presents the matches or competitions in progress with the results i
 <h2>realtime results</h2>
 
 ![r-5](https://github.com/safia-itouchene/html-css-javascript-template/assets/115651730/36066fff-2156-45f7-922b-a6c73115be28)
+
+<h1>News section</h1>
+
 ![r-4](https://github.com/safia-itouchene/html-css-javascript-template/assets/115651730/9ebce90b-f245-43b5-822a-ceb730524f1c)
 
 <h2>Quize</h2>
